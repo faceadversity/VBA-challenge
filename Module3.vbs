@@ -7,7 +7,7 @@ Sub StockData()
     Dim yearly_change As Double, percent_change As Double, total_volume As Double
     Dim output_row As Long
     ' Variables for tracking greatest increase, decrease and total volume
-    Dim greatest_inc As Double, greatest_Dec As Double, greatest_Vol As Double
+    Dim greatest_inc As Double, greatest_dec As Double, greatest_Vol As Double
     Dim inc_ticker As String, dec_ticker As String, vol_ticker As String
     
     ' Set worksheet
@@ -18,7 +18,7 @@ Sub StockData()
     
     ' Initialize tracking variables
     greatest_inc = 0
-    greatest_Dec = 0
+    greatest_dec = 0
     greatest_Vol = 0
     
     ' Find the last row of data
@@ -91,8 +91,8 @@ Sub StockData()
                 inc_ticker = ticker_sym
             End If
             
-            If percent_change < greatest_Dec Then
-                greatest_Dec = percent_change
+            If percent_change < greatest_dec Then
+                greatest_dec = percent_change
                 dec_ticker = ticker_sym
             End If
  
@@ -122,7 +122,7 @@ Sub StockData()
     
     wrksht.Cells(3, 15).Value = "Greatest % Decrease"
     wrksht.Cells(3, 16).Value = dec_ticker
-    wrksht.Cells(3, 17).Value = greatest_Dec * 100
+    wrksht.Cells(3, 17).Value = greatest_dec * 100
     
     wrksht.Cells(4, 15).Value = "Greatest Total Volume"
     wrksht.Cells(4, 16).Value = vol_ticker
