@@ -149,4 +149,4 @@ Sub StockData()
     wrksht.Cells(4, 17).Value = greatest_Vol
 End Sub
 
-code srcs: Close peer (Chidimma Oruche) with extensive Data Analytics experience. We both corrobarated ideas on this project and I was able to come up with the final outlines presented here. I also derived insights from Reddit and Stack Overflow but didn't use any specific coding formats pertaining to those sources.
+code srcs: Close peer (Chidimma Oruche) with extensive Data Analytics experience. We both corrobarated ideas on this project and I was able to come up with the final outlines presented here. I also derived insights from Reddit and Stack Overflow but didn't use any specific coding formats pertaining to those sources. They were a bit too complicated especially when trying to merge all worksheets together to display needed results by running the macro one time. Doing this on an individual basis was within my abilities to comprehend and run successfully for all yearly stock outputs.
