@@ -19,6 +19,7 @@ The objective of this project is to create a script that loops through all the s
 Functionality was added to the VBA code that returned stock values with the "Greatest % increase", "Greatest % decrease", and "Greatest total volume". Each VBA script will have to be run individually to output the needed results in their corresponding yearly stock returns spreadsheet. The VBA files needed to perform this function is attached to the repository for reference purposes. A sample VBA code for the 2018 Stock Performance is included below:
 
 Sub StockData()
+
     ' Define the variables
     Dim wrksht As Worksheet
     Dim last_row As Long, i As Long, start_row As Long
